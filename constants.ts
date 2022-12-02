@@ -1,4 +1,4 @@
-export const AUCTION_DURATION = 5 * 1000 // 5 seconds
+export const AUCTION_DURATION = 8 * 1000 // 8 seconds, very generous for testing
 
 export const METHOD_RPC_NEW_AUCTION = 'nectar_auctionTransaction'
 export const METHOD_AUCTION_RESULT = 'nectar_auctionResult'
