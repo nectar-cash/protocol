@@ -41,7 +41,7 @@ export interface PayloadSearcherBid {
 
 interface PayloadAuctionDataWithWinner {
   hasWinner: true
-  bundle: UnknownTransactionBundle
+  bundle: TransactionBundle
 }
 interface PayloadAuctionDataWithoutWinner {
   hasWinner: false
@@ -75,9 +75,3 @@ export interface BundleTransactionSigned {
 }
 export type BundleTransaction = BundleTransactionHash | BundleTransactionSigned
 export type TransactionBundle = BundleTransaction[]
-
-export type BundleTransactionUnknown = {
-  hash?: string
-  signedTransaction?: string
-}
-export type UnknownTransactionBundle = BundleTransactionUnknown[]
